@@ -102,3 +102,9 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+
+# datasets
+data/MS_COCO/Images/*
+data/VOC_2007/VOCdevkit/*
+data/VOC_2012/VOCdevkit/*
