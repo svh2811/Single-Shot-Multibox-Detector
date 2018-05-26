@@ -106,5 +106,6 @@ venv.bak/
 
 # datasets
 data/MS_COCO/Images/*
+data/MS_COCO/Annotations/*
 data/VOC_2007/VOCdevkit/*
 data/VOC_2012/VOCdevkit/*
