@@ -16,14 +16,14 @@ echo "Done downloading."
 cd ../
 
 echo "Extracting training dataset..."
-unzip ./Images/train2014.zip -d ./Images
+unzip ./Images/train2017.zip -d ./Images
 
 echo "Extracting validation dataset..."
-unzip ./Images/val2014.zip -d ./Images
+unzip ./Images/val2017.zip -d ./Images
 
 echo "Extracting training and validation annotations dataset..."
-unzip ./Annotations/annotations_trainval2014.zip -d ./Annotations
+unzip ./Annotations/annotations_trainval2017.zip -d ./Annotations
 
-rm ./Images/train2014.zip
-rm ./Images/val2014.zip
-rm ./Annotations/annotations_trainval2014.zip
+rm ./Images/train2017.zip
+rm ./Images/val2017.zip
+rm ./Annotations/annotations_trainval2017.zip
