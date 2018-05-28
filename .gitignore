@@ -112,3 +112,12 @@ data/VOC_2012/VOCdevkit/*
 
 # pycharm files
 .idea/
+
+# model weights
+models/vgg-16/*.npz
+
+
+# Random Temp Files
+data/laska.png
+models/vgg-16/vgg16_weights.npz
+src/vgg.py
