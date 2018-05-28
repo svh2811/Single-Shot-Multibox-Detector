@@ -121,3 +121,5 @@ models/vgg-16/*.npz
 data/laska.png
 models/vgg-16/vgg16_weights.npz
 src/vgg.py
+src/imagenet_classes.py
+
