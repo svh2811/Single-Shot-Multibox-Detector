@@ -10,7 +10,7 @@ def preprocess_module(input):
         return images
 
 
-def cnn_module(name, input, kernel_shape, strides=1, padding='SAME'):
+def cnn_module(name, input, kernel_shape, strides=1, padding='SAME', relu=True):
     with tf.name_scope(name) as scope:
         kernel = tf.Variable(tf.truncated_normal(kernel_shape,
                                                  dtype=tf.float32,
@@ -35,9 +35,10 @@ def cnn_module(name, input, kernel_shape, strides=1, padding='SAME'):
 
         out = tf.nn.bias_add(conv, biases)
 
-        block_out = tf.nn.relu(out, name=scope)
+        if relu:
+            out = tf.nn.relu(out, name=scope)
 
-        return block_out, [kernel, biases]
+        return out, [kernel, biases]
 
 
 def max_pool_module(name, input, ksize=2, strides=2):
